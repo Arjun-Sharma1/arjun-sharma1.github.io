@@ -3,7 +3,7 @@
 
 ## Project Summary
 
-This is my personal portfolio.
+This is my personal website.
 
 ## Technology Stack
 
