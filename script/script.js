@@ -233,3 +233,12 @@ function resizePhoto() {
 $(window).on('load resize', function(){
 	resizePhoto();
 });
+
+$(document).ready(function() {
+  Hammer(demo).on("swipeleft", function(){
+    $(this).carousel('next');
+  });
+  Hammer(demo).on("swiperight", function(){
+    $(this).carousel('prev');
+  });
+});
