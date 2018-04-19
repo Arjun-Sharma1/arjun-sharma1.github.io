@@ -116,8 +116,11 @@ img {
 }
 
 #logo1 {
-  display: inline;
+  position: relative;
   width: 65px;
+  margin: 0 auto;
+  margin-bottom: 2.5vh;
+  top:-10px;
 }
 
 #logo2 {
@@ -303,7 +306,7 @@ img {
   margin: 0 20px;
 }
 
-.icon-container {
+.icon-container, .icon-container-end {
   display: inline-block;
   padding: 10px;
   border-radius: 30px;
@@ -320,21 +323,20 @@ img {
 .icon-container:after {
   position: absolute;
   content: '';
-  height: 120%;
+  height: 100%;
   margin-left: -1px;
   border: 1px solid #61cae9;
 }
 
-.icon-container.fade:after {
+.icon-container-end:after {
+  position: absolute;
   height: 90%;
+  border: 1px solid #61cae9;
+  content: '';
   -webkit-border-image: -webkit-linear-gradient(bottom, #F5F5F5, #61cae9 25%) 1 100%;
   -moz-border-image: -moz-linear-gradient(bottom, #F5F5F5, #61cae9 25%) 1 100%;
   -o-border-image: -o-linear-gradient(bottom, #F5F5F5, #61cae9 25%) 1 100%;
   border-image: linear-gradient(to top, #F5F5F5, #61cae9 25%) 1 100%;
-}
-
-.icon-container:not(.fade):after {
-  height: 120%;
 }
 
 .work .project {
@@ -475,7 +477,7 @@ img {
 
 .icon {
   display: inline-block;
-  width: 1em;
+  width: 1.05em;
   margin-right: .2em;
   font-family: "fontello";
   font-style: normal;

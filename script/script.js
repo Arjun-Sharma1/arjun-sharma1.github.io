@@ -234,6 +234,7 @@ $(window).on('load resize', function(){
 	resizePhoto();
 });
 
+//Swipe through carousel when viewing through mobile device
 $(document).ready(function() {
   Hammer(demo).on("swipeleft", function(){
     $(this).carousel('next');
