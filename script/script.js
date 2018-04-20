@@ -204,22 +204,15 @@ function hideYesNo() {
 
 // send message
 function sendMessage (n,e,m) {
-	$.ajax({
-			method: "GET",
-			url: 'script/send-message.php',
-	    data: { "name": n, "email" : e, "message" : m },
-	    success: function() {
-	    	if ($("#name").val().length > 1) {
-	    		var firstName = $("#name").val().split(' ')[0];
-		    	$("#firstName").html(" " + firstName);
-		    }
-	    	$("#submitted").show();
-	    	$("#name").val("");
-	    	$("#email").val("");
-	    	$("#message").val("");
-	    	scrollTo("#submitted",450);
-	    }
-	});
+  	if ($("#name").val().length > 1) {
+  		var firstName = $("#name").val().split(' ')[0];
+    	$("#firstName").html(" " + firstName);
+    }
+  	$("#submitted").show();
+  	$("#name").val("");
+  	$("#email").val("");
+  	$("#message").val("");
+  	scrollTo("#submitted",450);
 }
 
 // resize photo
