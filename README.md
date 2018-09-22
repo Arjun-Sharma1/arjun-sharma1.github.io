@@ -14,4 +14,4 @@ This is my personal website available at http://www.arjun-sharma.com
 
 ## To Do List
 
-* Add Resume
+[x] Add Resume
