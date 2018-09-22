@@ -3,7 +3,7 @@
 
 ## Project Summary
 
-This is my personal website available at https://arjun-sharma.com
+This is my personal website available at http://www.arjun-sharma.com
 
 ## Technology Stack
 
